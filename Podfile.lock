@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (6.1.1)
+  - pop (1.0.10)
+  - WARangeSlider (1.1.1)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - pop
+  - WARangeSlider
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManagerSwift
+    - pop
+    - WARangeSlider
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
+
+PODFILE CHECKSUM: 32ec1076462a6e9b9945ea797630367bbf3c3d72
+
+COCOAPODS: 1.5.3
