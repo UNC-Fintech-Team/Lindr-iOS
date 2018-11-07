@@ -163,11 +163,3 @@ extension HomeViewController {
         return [andrew,angelina,nicole,bryan]
     }
 }
-
-struct LoanCard {
-    let quantity: Float
-    let interestRate: Int
-    let purpose: String
-    let name: String
-    let rating: Int
-}

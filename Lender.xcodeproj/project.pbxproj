@@ -10,6 +10,10 @@
 		5E5DE0F5B6E147FE43F6692D /* Pods_LenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8563018E16378E4A3529FC2E /* Pods_LenderUITests.framework */; };
 		A810B9E52B3904F0851F80B0 /* Pods_Lender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01D7FEC28F8F48E978C8EFC /* Pods_Lender.framework */; };
 		AC6C0744E7E6CE30AAA848FB /* Pods_LenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12DE02D08775EC92FCE0738 /* Pods_LenderTests.framework */; };
+		BC080D2821934BF5002BC343 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC080D2721934BF5002BC343 /* User.swift */; };
+		BC080D2C21934C33002BC343 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC080D2B21934C33002BC343 /* Loan.swift */; };
+		BC080D3021934D77002BC343 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC080D2F21934D77002BC343 /* Routes.swift */; };
+		BC080D3221935807002BC343 /* LoanRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC080D3121935807002BC343 /* LoanRequestViewController.swift */; };
 		BC4022DB2184DC4C00B3F65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4022DA2184DC4C00B3F65E /* AppDelegate.swift */; };
 		BC4022E02184DC4C00B3F65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4022DE2184DC4C00B3F65E /* Main.storyboard */; };
 		BC4022E22184DC4E00B3F65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4022E12184DC4E00B3F65E /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		2F8614C0352CABC92BA9E93A /* Pods-LenderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LenderUITests/Pods-LenderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		41DFC94889F8200CCFB0549F /* Pods-Lender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lender/Pods-Lender.debug.xcconfig"; sourceTree = "<group>"; };
 		8563018E16378E4A3529FC2E /* Pods_LenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC080D2721934BF5002BC343 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC080D2B21934C33002BC343 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		BC080D2F21934D77002BC343 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		BC080D3121935807002BC343 /* LoanRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanRequestViewController.swift; sourceTree = "<group>"; };
 		BC4022D72184DC4C00B3F65E /* Lender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4022DA2184DC4C00B3F65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC4022DF2184DC4C00B3F65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,6 +137,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC080D2D21934C7A002BC343 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC4023262184F5F500B3F65E /* SwipeView.swift */,
+				BC4023172184F16000B3F65E /* CardContainerView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BC080D2E21934C9E002BC343 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC40231D2184F22E00B3F65E /* CardContainerViewDataSource.swift */,
+				BC4023192184F1BE00B3F65E /* CardContainerViewDelegate.swift */,
+				BC4023282184F65900B3F65E /* SwipeViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		BC4022CE2184DC4C00B3F65E = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +181,8 @@
 		BC4022D92184DC4C00B3F65E /* Lender */ = {
 			isa = PBXGroup;
 			children = (
+				BC080D2E21934C9E002BC343 /* Protocols */,
+				BC080D2D21934C7A002BC343 /* Views */,
 				BC4023222184F36600B3F65E /* UI */,
 				BC4023212184F35E00B3F65E /* Application */,
 				BC4023202184F35500B3F65E /* Models */,
@@ -187,6 +216,7 @@
 				BC40230B2184E85B00B3F65E /* LoginViewController.swift */,
 				BC40230D2184E87400B3F65E /* JoinViewController.swift */,
 				BC40230F2184E89300B3F65E /* HomeViewController.swift */,
+				BC080D3121935807002BC343 /* LoanRequestViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,14 +224,12 @@
 		BC4023202184F35500B3F65E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC080D2721934BF5002BC343 /* User.swift */,
 				BC4023152184F09100B3F65E /* Swipe.swift */,
-				BC4023172184F16000B3F65E /* CardContainerView.swift */,
 				BC40231B2184F20B00B3F65E /* Card.swift */,
-				BC40231D2184F22E00B3F65E /* CardContainerViewDataSource.swift */,
-				BC4023192184F1BE00B3F65E /* CardContainerViewDelegate.swift */,
 				BC40232C2184FB1300B3F65E /* SampleCard.swift */,
-				BC4023262184F5F500B3F65E /* SwipeView.swift */,
-				BC4023282184F65900B3F65E /* SwipeViewDelegate.swift */,
+				BC080D2B21934C33002BC343 /* Loan.swift */,
+				BC080D2F21934D77002BC343 /* Routes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -463,15 +491,19 @@
 				BC40230C2184E85B00B3F65E /* LoginViewController.swift in Sources */,
 				BC40232D2184FB1300B3F65E /* SampleCard.swift in Sources */,
 				BC4023182184F16000B3F65E /* CardContainerView.swift in Sources */,
+				BC080D3221935807002BC343 /* LoanRequestViewController.swift in Sources */,
 				BC40230A2184E84200B3F65E /* LandingViewController.swift in Sources */,
 				BC40231E2184F22E00B3F65E /* CardContainerViewDataSource.swift in Sources */,
 				BC40231A2184F1BE00B3F65E /* CardContainerViewDelegate.swift in Sources */,
 				BC40230E2184E87400B3F65E /* JoinViewController.swift in Sources */,
+				BC080D2821934BF5002BC343 /* User.swift in Sources */,
 				BC4022DB2184DC4C00B3F65E /* AppDelegate.swift in Sources */,
+				BC080D3021934D77002BC343 /* Routes.swift in Sources */,
 				BC4023102184E89300B3F65E /* HomeViewController.swift in Sources */,
 				BC4023292184F65900B3F65E /* SwipeViewDelegate.swift in Sources */,
 				BC4023272184F5F500B3F65E /* SwipeView.swift in Sources */,
 				BC4023142184F01900B3F65E /* Extensions.swift in Sources */,
+				BC080D2C21934C33002BC343 /* Loan.swift in Sources */,
 				BC40231C2184F20B00B3F65E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -234,6 +234,9 @@
                                     <constraint firstAttribute="width" constant="24" id="vhh-Nx-QyZ"/>
                                 </constraints>
                                 <state key="normal" image="angle-pointing-to-left"/>
+                                <connections>
+                                    <action selector="backAction:" destination="RwD-vo-CtY" eventType="touchUpInside" id="5j8-xa-xrO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-Bd-J7L">
                                 <rect key="frame" x="37" y="103" width="300" height="30"/>
@@ -375,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uW6-QU-8nC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872.79999999999995" y="897.30134932533736"/>
+            <point key="canvasLocation" x="873" y="904"/>
         </scene>
     </scenes>
     <resources>
